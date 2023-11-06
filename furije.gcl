@@ -1,0 +1,717 @@
+fontsize 1
+
+number Pi 3.1415926535897932384626433832795028841971693993751058209 
+
+number minX 0
+number minY 0
+
+number maxX 100
+number maxY 80
+
+dim maxX maxY
+
+point LO minX maxY
+point RO maxX maxY
+point LU minX minY
+point RU maxX minY
+line l1 LO RU
+line l2 LU RO
+intersec O l1 l2 
+getx Ox O
+gety Oy O
+
+
+expression Xmin {minX+2} 
+ expression Ymin {minY+2} 
+
+expression Xmax {maxX-2} 
+expression Ymax {maxY-2} 
+
+
+
+ang_picture Xmin Ymin Xmax Ymax
+ang_origin Ox Oy
+
+ang_unit 1
+ang_scale 1 1
+
+
+ang_drawsystem_p 3 2 2 2 3
+
+number num_points 73
+array dog_x { num_points }
+array dog_y { num_points } 
+
+expression dog_x[ 1 ] { -0.81 }
+expression dog_y[ 1 ] { -0.6 }
+expression dog_x[ 2 ] { -0.78 }
+expression dog_y[ 2 ] { -0.4 }
+expression dog_x[ 3 ] { -0.75 }
+expression dog_y[ 3 ] { -0.25 }
+expression dog_x[ 4 ] { -0.6 }
+expression dog_y[ 4 ] { -0.15 }
+expression dog_x[ 5 ] { -0.4 }
+expression dog_y[ 5 ] { -0.12 }
+expression dog_x[ 6 ] { -0.2 }
+expression dog_y[ 6 ] { -0.12 }
+expression dog_x[ 7 ] { -0.0 }
+expression dog_y[ 7 ] { -0.14 }
+expression dog_x[ 8 ] { 0.2 }
+expression dog_y[ 8 ] { -0.14 }
+expression dog_x[ 9 ] { 0.4 }
+expression dog_y[ 9 ] { -0.11 }
+expression dog_x[ 10 ] { 0.6 }
+expression dog_y[ 10 ] { -0.07 }
+expression dog_x[ 11 ] { 0.8 }
+expression dog_y[ 11 ] { -0.04 }
+expression dog_x[ 12 ] { 1.0 }
+expression dog_y[ 12 ] { -0.04 }
+expression dog_x[ 13 ] { 1.2 }
+expression dog_y[ 13 ] { -0.04 }
+expression dog_x[ 14 ] { 1.4 }
+expression dog_y[ 14 ] { -0.05 }
+expression dog_x[ 15 ] { 1.6 }
+expression dog_y[ 15 ] { -0.08 }
+expression dog_x[ 16 ] { 1.8 }
+expression dog_y[ 16 ] { -0.25 }
+expression dog_x[ 17 ] { 1.82 }
+expression dog_y[ 17 ] { -0.4 }
+expression dog_x[ 18 ] { 1.84 }
+expression dog_y[ 18 ] { -0.5 }
+expression dog_x[ 19 ] { 1.87 }
+expression dog_y[ 19 ] { -0.63 }
+expression dog_x[ 20 ] { 1.95 }
+expression dog_y[ 20 ] { -0.5 }
+expression dog_x[ 21 ] { 2.0 }
+expression dog_y[ 21 ] { -0.4 }
+expression dog_x[ 22 ] { 2.03 }
+expression dog_y[ 22 ] { -0.25 }
+expression dog_x[ 23 ] { 2.04 }
+expression dog_y[ 23 ] { -0.08 }
+expression dog_x[ 24 ] { 2.06 }
+expression dog_y[ 24 ] { 0.1 }
+expression dog_x[ 25 ] { 2.05 }
+expression dog_y[ 25 ] { 0.25 }
+expression dog_x[ 26 ] { 1.98 }
+expression dog_y[ 26 ] { 0.4 }
+expression dog_x[ 27 ] { 2.15 }
+expression dog_y[ 27 ] { 0.45 }
+expression dog_x[ 28 ] { 2.3 }
+expression dog_y[ 28 ] { 0.55 }
+expression dog_x[ 29 ] { 2.33 }
+expression dog_y[ 29 ] { 0.62 }
+expression dog_x[ 30 ] { 2.25 }
+expression dog_y[ 30 ] { 0.625 }
+expression dog_x[ 31 ] { 2.0 }
+expression dog_y[ 31 ] { 0.555 }
+expression dog_x[ 32 ] { 1.75 }
+expression dog_y[ 32 ] { 0.48 }
+expression dog_x[ 33 ] { 1.5 }
+expression dog_y[ 33 ] { 0.42 }
+expression dog_x[ 34 ] { 1.25 }
+expression dog_y[ 34 ] { 0.38 }
+expression dog_x[ 35 ] { 1.0 }
+expression dog_y[ 35 ] { 0.35 }
+expression dog_x[ 36 ] { 0.75 }
+expression dog_y[ 36 ] { 0.31 }
+expression dog_x[ 37 ] { 0.5 }
+expression dog_y[ 37 ] { 0.28 }
+expression dog_x[ 38 ] { 0.25 }
+expression dog_y[ 38 ] { 0.25 }
+expression dog_x[ 39 ] { 0.0 }
+expression dog_y[ 39 ] { 0.25 }
+expression dog_x[ 40 ] { -0.25 }
+expression dog_y[ 40 ] { 0.26 }
+expression dog_x[ 41 ] { -0.5 }
+expression dog_y[ 41 ] { 0.3 }
+expression dog_x[ 42 ] { -0.75 }
+expression dog_y[ 42 ] { 0.35 }
+expression dog_x[ 43 ] { -1.0 }
+expression dog_y[ 43 ] { 0.4 }
+expression dog_x[ 44 ] { -1.1 }
+expression dog_y[ 44 ] { 0.43 }
+expression dog_x[ 45 ] { -1.25 }
+expression dog_y[ 45 ] { 0.38 }
+expression dog_x[ 46 ] { -1.31 }
+expression dog_y[ 46 ] { 0.3 }
+expression dog_x[ 47 ] { -1.35 }
+expression dog_y[ 47 ] { 0.2 }
+expression dog_x[ 48 ] { -1.38 }
+expression dog_y[ 48 ] { -0.06 }
+expression dog_x[ 49 ] { -1.36 }
+expression dog_y[ 49 ] { -0.2 }
+expression dog_x[ 50 ] { -1.34 }
+expression dog_y[ 50 ] { -0.4 }
+expression dog_x[ 51 ] { -1.25 }
+expression dog_y[ 51 ] { -0.59 }
+expression dog_x[ 52 ] { -1.1 }
+expression dog_y[ 52 ] { -0.55 }
+expression dog_x[ 53 ] { -1.01 }
+expression dog_y[ 53 ] { -0.4 }
+expression dog_x[ 54 ] { -0.97 }
+expression dog_y[ 54 ] { -0.2 }
+expression dog_x[ 55 ] { -0.95 }
+expression dog_y[ 55 ] { -0.0 }
+expression dog_x[ 56 ] { -0.97 }
+expression dog_y[ 56 ] { 0.2 }
+expression dog_x[ 57 ] { -1.0 }
+expression dog_y[ 57 ] { 0.4 }
+expression dog_x[ 58 ] { -1.1 }
+expression dog_y[ 58 ] { 0.6 }
+expression dog_x[ 59 ] { -1.2 }
+expression dog_y[ 59 ] { 0.65 }
+expression dog_x[ 60 ] { -1.3 }
+expression dog_y[ 60 ] { 0.6 }
+expression dog_x[ 61 ] { -1.4 }
+expression dog_y[ 61 ] { 0.48 }
+expression dog_x[ 62 ] { -1.5 }
+expression dog_y[ 62 ] { 0.33 }
+expression dog_x[ 63 ] { -1.7 }
+expression dog_y[ 63 ] { 0.23 }
+expression dog_x[ 64 ] { -2.0 }
+expression dog_y[ 64 ] { 0.1 }
+expression dog_x[ 65 ] { -2.3 }
+expression dog_y[ 65 ] { -0.11 }
+expression dog_x[ 66 ] { -2.0 }
+expression dog_y[ 66 ] { -0.11 }
+expression dog_x[ 67 ] { -1.8 }
+expression dog_y[ 67 ] { -0.11 }
+expression dog_x[ 68 ] { -1.6 }
+expression dog_y[ 68 ] { -0.08 }
+expression dog_x[ 69 ] { -1.38 }
+expression dog_y[ 69 ] { -0.06 }
+expression dog_x[ 70 ] { -1.36 }
+expression dog_y[ 70 ] { -0.2 }
+expression dog_x[ 71 ] { -1.34 }
+expression dog_y[ 71 ] { -0.4 }
+expression dog_x[ 72 ] { -1.25 }
+expression dog_y[ 72 ] { -0.59 }
+expression dog_x[ 73 ] { -1.1 }
+expression dog_y[ 73 ] { -0.55 }
+
+
+number i 1
+
+
+expression j { 1 }
+expression len { num_points - 1} 
+while { j <=  len } {
+	
+	expression a { dog_x[j] * 10}
+	expression b { dog_y[j] * 10}
+	ang_point P1 a b	
+
+	expression c { dog_x[j + 1] * 10}
+	expression d { dog_y[j + 1] * 10}
+	ang_point P2 c d
+	% cmark_lt P2
+	% point P1 InputT[j] InputX[j]
+	% cmark_lt P1
+	% point P2 InputT[j+1] InputX[j+1]
+	
+	drawsegment P1 P2
+
+	expression j { j + 1 }  
+}
+
+
+
+	expression a { dog_x[1] * 10}
+	expression b { dog_y[1] * 10}
+	ang_point P1 a b	
+
+	expression c { dog_x[51] * 10}
+	expression d { dog_y[51] * 10}
+	ang_point P2 c d
+
+drawsegment P1 P2  
+
+% zero mean
+array X_array { num_points } 
+array Y_array { num_points } 
+number k 1 
+expression average_X { 0 }
+expression average_Y { 0 }  
+while { k <= num_points } {
+
+	expression a { dog_x[k] } 
+	expression b { dog_y[k] } 
+	expression average_X { average_X + a } 
+	expression average_Y { average_Y + b }  
+	expression k  { k + 1 }
+}
+
+expression average_X { average_X / num_points }
+expression average_Y { average_Y / num_points } 
+
+number k 1
+while { k <= num_points } {
+	expression a { dog_x[k] - average_X }
+	expression b { dog_y[k] - average_Y } 
+	expression X_array[k] { a }
+	expression Y_array[k] { b } 
+
+	expression k { k + 1 }
+}
+
+linethickness 0.45
+
+
+expression L { 0 }
+
+array dxj { num_points } 
+array dyj { num_points } 
+array dlj { num_points } 
+
+array xj { num_points }
+array yj { num_points } 
+array lj { num_points } 
+array ljm1 { num_points } 
+
+
+expression xj_accum { 0 } 
+expression yj_accum { 0 } 
+expression lj_accum { 0 } 
+
+expression N_coeff { 30 } 
+array an { N_coeff } 
+array bn { N_coeff } 
+array cn { N_coeff } 
+array dn { N_coeff } 
+
+number i 1
+while { i <= num_points } { 
+
+	if_then_else { i == 1 } 
+	{
+		expression dxj[i] { X_array[i] - X_array[num_points]  } 
+		expression dyj[i] { Y_array[i] - Y_array[num_points] } 
+		expression dlj[i] { sqrt ( dxj[i] * dxj[i] + dyj[i] * dyj[i] ) } 	
+ 
+		expression xj[i] { xj_accum + dxj[i] } 
+		expression yj[i] { yj_accum + dyj[i] } 
+		expression lj[i] { lj_accum + dlj[i] }
+		expression ljm1[i] { lj_accum } 	
+
+		expression xj_accum { xj[i] } 
+		expression yj_accum { yj[i] } 
+		expression lj_accum { lj[i] } 
+	
+		expression L { L + dlj[i] } 
+	}
+	{
+		expression dxj[i] { X_array[i] - X_array[i-1]  } 
+		expression dyj[i] { Y_array[i] - Y_array[i-1] } 
+		expression dlj[i] { sqrt ( dxj[i] * dxj[i] + dyj[i] * dyj[i] ) } 	
+ 
+		expression xj[i] { xj_accum + dxj[i] } 
+		expression yj[i] { yj_accum + dyj[i] } 
+		expression lj[i] { lj_accum + dlj[i] }
+		expression ljm1[i] { lj_accum } 	
+
+		expression xj_accum { xj[i] } 
+		expression yj_accum { yj[i] } 
+		expression lj_accum { lj[i] } 
+	
+		expression L { L + dlj[i] } 	
+	}
+
+
+	expression i { i + 1 } 
+}
+
+array first_an { num_points } 
+array first_cn { num_points } 
+array second_an { num_points }
+array second_bn { num_points } 
+
+number i 1 
+while { i <= N_coeff } {
+	number j 1 
+	while { j <= num_points } {
+		%expression aa { dxj[j] } 
+		%expression aaa { dlj[j] }
+		expression temp_an {  dxj[j] / dlj[j] } 
+		expression first_an[j] { temp_an } 
+		
+		expression temp_cn { dyj[j] / dlj[j] }
+		expression first_cn[j] { temp_cn } 		
+
+		expression a1 { cos( 2 * Pi * i * lj[j] / L ) }
+		expression a2 { cos( 2 * Pi * i * ljm1[j] / L ) }
+		expression c1 { sin( 2 * Pi * i * lj[j] / L ) }
+		expression c2 { sin( 2 * Pi * i * ljm1[j] / L ) }
+	
+		expression  second_an[j] { a1 - a2 } 
+		expression second_bn[j] {  c1 - c2 } 
+
+		expression j { j + 1 } 
+	}
+
+	% calc a[i], b[i], c[i], d[i] 
+
+	expression o { L / (2 * Pi * Pi * i * i) } 
+	expression sum1 { 0 } 
+	expression sum2 { 0 } 
+	expression sum3 { 0 } 
+	expression sum4 { 0 } 
+	number j 1 
+	while { j <= num_points } {
+		expression sum1 { sum1 + (first_an[j] * second_an[j]) } 
+		expression sum2 { sum2 + (first_an[j] * second_bn[j]) } 
+		expression sum3 { sum3 + (first_cn[j] * second_an[j]) } 
+		expression sum4 { sum4 + (first_cn[j] * second_bn[j]) } 
+		expression j { j + 1 }
+	}
+
+	expression an[i] { o *  sum1 } 
+	expression bn[i] { o * sum2 } 
+	expression cn[i] { o * sum3 } 
+	expression dn[i] { o * sum4 } 
+
+	expression i { i + 1 } 
+}
+
+
+number n_L 100
+expression start { 0 }
+expression stop { L } 
+array l { n_L } 
+
+expression step { (stop - start ) / ( n_L - 1 ) } 
+number j 1
+while { j <= n_L } {
+	expression l[j] { start + step *( j - 1)  }  
+	expression j { j + 1} 
+}
+
+array inner_sum_x { n_L } 
+array inner_sum_y { n_L } 
+array inner_sum_x_1 { N_coeff n_L } 
+array inner_sum_y_1 { N_coeff n_L }  % 30 x 1000
+
+number i 1 
+while { i <= n_L } {
+	expression inner_sum_x[i] { average_X - 0.1}
+	expression inner_sum_y[i] { average_Y } 	
+	expression i { i + 1}
+}
+
+number i 1
+while { i <= N_coeff } {
+	number j 1
+	while { j <= n_L } {
+		% expression temp11 { a[i] } 
+		% expression temp12 {  }
+		expression temp1 { an[i] * cos( (2 * Pi * i * l[j]) / L) } 	
+		expression temp2 { bn[i] * sin( (2 * Pi * i * l[j]) / L ) } 
+		
+
+		expression temp3 { cn[i] * cos( (2 * Pi * i * l[j]) / L) }
+		expression temp4 { dn[i] * sin( (2 * Pi * i * l[j]) / L ) } 
+		
+		
+		expression inner_sum_x[j] { inner_sum_x[j] + temp1 + temp2 } 
+		expression inner_sum_y[j] { inner_sum_y[j] + temp3 + temp4 } 
+
+		expression inner_sum_x_1[i][j] { inner_sum_x[j] } 
+		expression inner_sum_y_1[i][j] { inner_sum_y[j] } 
+
+		expression j { j + 1}	
+	}	 
+
+	% expression inner_sum_x_1 { inner_sum_x } 
+	expression i { i + 1 } 
+}
+
+% 	       x            y
+% 	     cos   sin  cos sin 
+% i need to use an, bn, cn, dn 
+% 
+
+% 
+color 255 0 0 
+expression sample_n { 20 } 
+expression j { 1 }
+expression len { n_L - 1} 
+
+point TT 0 0 25 25
+getx t TT 
+
+
+procedure nacrtaj { a b c d } 
+{
+		expression a { a * 10}
+		expression b { b * 10}
+		ang_point P1 a b	
+
+		expression c { c * 10}
+		expression d { d * 10}
+		ang_point P2 c d
+		drawsegment P1 P2
+}
+	 
+while { j <= len } {
+	if_then_else { t <= 1 } { 
+		expression a { inner_sum_x_1[1][j] }
+		expression b { inner_sum_y_1[1][j] }
+		expression c { inner_sum_x_1[1][j + 1] }
+		expression d { inner_sum_y_1[1][j + 1] }
+
+		call nacrtaj { a b c d } 
+	}
+	{
+		if_then_else { t <= 2 } { 
+			expression a { inner_sum_x_1[2][j] }
+			expression b { inner_sum_y_1[2][j] }
+			expression c { inner_sum_x_1[2][j + 1] }
+			expression d { inner_sum_y_1[2][j + 1] }
+
+			call nacrtaj { a b c d } 
+		}
+		{
+			if_then_else { t <= 3 } {
+			expression a { inner_sum_x_1[3][j] }
+			expression b { inner_sum_y_1[3][j] }
+			expression c { inner_sum_x_1[3][j + 1] }
+			expression d { inner_sum_y_1[3][j + 1] }
+
+			call nacrtaj { a b c d } 
+			}
+			{
+				if_then_else { t <= 4 } {
+				expression a { inner_sum_x_1[4][j] }
+				expression b { inner_sum_y_1[4][j] }
+				expression c { inner_sum_x_1[4][j + 1] }
+				expression d { inner_sum_y_1[4][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 5 } {
+				expression a { inner_sum_x_1[5][j] }
+				expression b { inner_sum_y_1[5][j] }
+				expression c { inner_sum_x_1[5][j + 1] }
+				expression d { inner_sum_y_1[5][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 6 } {
+				expression a { inner_sum_x_1[6][j] }
+				expression b { inner_sum_y_1[6][j] }
+				expression c { inner_sum_x_1[6][j + 1] }
+				expression d { inner_sum_y_1[6][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 7 } {
+				expression a { inner_sum_x_1[7][j] }
+				expression b { inner_sum_y_1[7][j] }
+				expression c { inner_sum_x_1[7][j + 1] }
+				expression d { inner_sum_y_1[7][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 8 } {
+				expression a { inner_sum_x_1[8][j] }
+				expression b { inner_sum_y_1[8][j] }
+				expression c { inner_sum_x_1[8][j + 1] }
+				expression d { inner_sum_y_1[8][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 9 } {
+				expression a { inner_sum_x_1[9][j] }
+				expression b { inner_sum_y_1[9][j] }
+				expression c { inner_sum_x_1[9][j + 1] }
+				expression d { inner_sum_y_1[9][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 10 } {
+				expression a { inner_sum_x_1[11][j] }
+				expression b { inner_sum_y_1[11][j] }
+				expression c { inner_sum_x_1[11][j + 1] }
+				expression d { inner_sum_y_1[11][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 11 } {
+				expression a { inner_sum_x_1[11][j] }
+				expression b { inner_sum_y_1[11][j] }
+				expression c { inner_sum_x_1[11][j + 1] }
+				expression d { inner_sum_y_1[11][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 12 } {
+				expression a { inner_sum_x_1[12][j] }
+				expression b { inner_sum_y_1[12][j] }
+				expression c { inner_sum_x_1[12][j + 1] }
+				expression d { inner_sum_y_1[12][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 13 } {
+				expression a { inner_sum_x_1[13][j] }
+				expression b { inner_sum_y_1[13][j] }
+				expression c { inner_sum_x_1[13][j + 1] }
+				expression d { inner_sum_y_1[13][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 14 } {
+				expression a { inner_sum_x_1[14][j] }
+				expression b { inner_sum_y_1[14][j] }
+				expression c { inner_sum_x_1[14][j + 1] }
+				expression d { inner_sum_y_1[14][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 15 } {
+				expression a { inner_sum_x_1[15][j] }
+				expression b { inner_sum_y_1[15][j] }
+				expression c { inner_sum_x_1[15][j + 1] }
+				expression d { inner_sum_y_1[15][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 16 } {
+				expression a { inner_sum_x_1[16][j] }
+				expression b { inner_sum_y_1[16][j] }
+				expression c { inner_sum_x_1[16][j + 1] }
+				expression d { inner_sum_y_1[16][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 17 } {
+				expression a { inner_sum_x_1[17][j] }
+				expression b { inner_sum_y_1[17][j] }
+				expression c { inner_sum_x_1[17][j + 1] }
+				expression d { inner_sum_y_1[17][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 18 } {
+				expression a { inner_sum_x_1[18][j] }
+				expression b { inner_sum_y_1[18][j] }
+				expression c { inner_sum_x_1[18][j + 1] }
+				expression d { inner_sum_y_1[18][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 19 } {
+				expression a { inner_sum_x_1[19][j] }
+				expression b { inner_sum_y_1[19][j] }
+				expression c { inner_sum_x_1[19][j + 1] }
+				expression d { inner_sum_y_1[19][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 20 } {
+				expression a { inner_sum_x_1[20][j] }
+				expression b { inner_sum_y_1[20][j] }
+				expression c { inner_sum_x_1[20][j + 1] }
+				expression d { inner_sum_y_1[20][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 21 } {
+				expression a { inner_sum_x_1[21][j] }
+				expression b { inner_sum_y_1[21][j] }
+				expression c { inner_sum_x_1[21][j + 1] }
+				expression d { inner_sum_y_1[21][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 22 } {
+				expression a { inner_sum_x_1[22][j] }
+				expression b { inner_sum_y_1[22][j] }
+				expression c { inner_sum_x_1[22][j + 1] }
+				expression d { inner_sum_y_1[22][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 23 } {
+				expression a { inner_sum_x_1[23][j] }
+				expression b { inner_sum_y_1[23][j] }
+				expression c { inner_sum_x_1[23][j + 1] }
+				expression d { inner_sum_y_1[23][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 24 } {
+				expression a { inner_sum_x_1[24][j] }
+				expression b { inner_sum_y_1[24][j] }
+				expression c { inner_sum_x_1[24][j + 1] }
+				expression d { inner_sum_y_1[24][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+													if_then_else { t <= 25 } {
+				expression a { inner_sum_x_1[25][j] }
+				expression b { inner_sum_y_1[25][j] }
+				expression c { inner_sum_x_1[25][j + 1] }
+				expression d { inner_sum_y_1[25][j + 1] }
+
+				call nacrtaj { a b c d } 
+				}
+				{
+					
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}
+				}	
+				}	
+				}	
+				}	
+				}	
+				}	
+				}
+				}
+			}
+		}
+	}
+	
+
+
+	
+	expression j { j + 1 }  
+ }
+
+animation_frames 60 30
+
+
+
+
